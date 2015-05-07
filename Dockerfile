@@ -1,5 +1,6 @@
 FROM        debian:8.0
 MAINTAINER  andystanton
+ENV         LANG C.UTF-8
 ENV         CLANG_VERSION 3.5
 RUN         apt-get update && \
             apt-get install -y patch clang-${CLANG_VERSION} && \
